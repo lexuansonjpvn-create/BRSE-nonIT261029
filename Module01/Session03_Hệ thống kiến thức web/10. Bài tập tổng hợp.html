@@ -40,21 +40,21 @@
         <th>Characteristics</th>
     </tr>
     <tr>
-        <td>Persian</td>
+        <td><a href="#persian" title="Persian Cat">Persian<sup>1</sup></a></td>
         <td><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/250px-Gustav_chocolate.jpg?w=100" alt="Persian Cat" style="width: 100px;height: auto;"></td>
         <td>Iran</td>
         <td>Long fur, flat face</td>
         <td>Docile, affectionate</td>
     </tr>
     <tr>
-        <td>Siamese</td>
+        <td><a href="#siamese" title="Siamese Cat">Siamese<sup>2</sup></a></td>
         <td><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/250px-Aegean_cat.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Siamese Cat" style="width: 100px;height: auto;"></td>
         <td>Thailand</td>
         <td>Blue eyes, cream-colored body</td>
         <td>Active, vocal</td>
     </tr>
     <tr>
-        <td>Maine Coon</td>
+        <td><a href="#maine-coon" title="Maine Coon Cat">Maine Coon<sup>3</sup></a></td>
         <td><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/250px-American_bobtail_2.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Maine Coon Cat" style="width: 100px;height: auto;"></td>
         <td>United States</td>
         <td>Large size, tufted ears</td>
@@ -63,22 +63,23 @@
 </table>
 <h2>Cat Form</h2>
 <form action="#" method="post">
-    <div>
-        <label for="catName">Is your cat indoor or outdoor cat?</label><br/>
+    <fieldset>
+        <legend><label for="catName">Is your cat indoor or outdoor cat?</label><br/></legend>
         <input type="radio" id="indoor" name="catEnvironment" value="indoor">
         <label for="indoor">Indoor</label>
         <input type="radio" id="outdoor" name="catEnvironment" value="outdoor">
         <label for="outdoor">Outdoor</label>
-    </div>
-    <div>
-        <label for="catPersonality">What is your cat's personality like?</label><br/>
+    </fieldset>
+    <fieldset>
+        <legend><label for="catPersonality">What is your cat's personality like?</label></legend><br/>
         <input type="checkbox" id="loving" name="catPersonality" value="loving">
         <label for="loving">Loving</label>
         <input type="checkbox" id="playful" name="catPersonality" value="playful">
         <label for="playful">Playful</label>
         <input type="checkbox" id="independent" name="catPersonality" value="independent">
         <label for="independent">Independent</label>
-    </div>
+
+    </fieldset>
     <div>
         <input type="search" id="catSearch" name="catSearch" placeholder="Cat photo Url" />
         <input type="submit" value="Submit">
